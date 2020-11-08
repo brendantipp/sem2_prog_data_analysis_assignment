@@ -44,7 +44,11 @@ W3schools.com gives an nice easy explanation https://www.w3schools.com/python/nu
 ### Purpose of the Numpy.random subpackage
 
 
-NumPy offers the random moudle to work with random numbers - random is a subpackage of Numpy and is available in the numpy library The module contains the functions which are used for generarting random numbers. The module contains some simple random data generation methods, some premutation and distribution functions , and random generator functions.
+NumPy offers the random moudle to work with random numbers - random is a subpackage of Numpy and is available in the numpy library. The module contains the functions which are used for generarting random numbers. The module contains some simple random data generation methods, some premutation and distribution functions , and random generator functions.
+
+There is a random() function built into python and you might ask why use the numpy.random package - I found the following explanation wording at https://stackoverflow.com/questions/7029993/differences-between-numpy-random-and-random-random-in-python benefical to a novice like me!
+
+"The numpy.random library contains a few extra probability distributions commonly used in scientific research, as well as a couple of convenience functions for generating arrays of random data. The random.random library is a little more lightweight, and should be fine if you're not doing scientific research or other kinds of work in statistics" . So numpy.random wins our vote.
 
 Within the numpy.random subpackage there are a number of functions and these can be broken down into 
 
@@ -54,6 +58,14 @@ Within the numpy.random subpackage there are a number of functions and these can
 - Seed functions
 
 More information on the above can be found in more detail at https://numpy.org/doc/stable/reference/random/
+
+### Important changes made to the Numpy.random package and why these changes are important  to sofware developers
+
+At the time of writing this assignment them most uptodate version of the Numpy module is v 1.19. It is important to note that the latest versions of the Numpy.random package contain updated functions.  In paticular there has been some major changes to the Simple Random Data functions - some of the old functons where almost duplicates of each other and were essentially the same function. The distributions and Permutation functions are very similar in both the new and older versions of the Numpy.random package
+
+It is the job of a software developer to keep up to date with these changes and to maintain their code. In the case of the numpy.random library developers can find the most recent documentation available at https://numpy.org/doc/stable/
+
+
 
 
 #### Simple random data functions
@@ -93,7 +105,7 @@ To be completed
 
 To be completed 
 
-
+## Lessons learned and conclusions
 
 
 #### Project Plan
@@ -122,6 +134,11 @@ Withing the readme file give an overvie of seeds, why they are important, there 
 
 
 References used and research undertaken
+
+
+Understanding Numpy
+https://stackoverflow.com/questions/7029993/differences-between-numpy-random-and-random-random-in-python
+
 
 https://numpy.org/doc/stable/reference/random/generator.html#numpy.random.Generator
 https://numpy.org/doc/stable/reference/random/index.html
