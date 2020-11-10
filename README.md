@@ -103,7 +103,20 @@ To be completed
 
 ## Explaining the use of Seeds in generating Pseudorandm Numbers
 
-To be completed 
+There’s a fundamental problem when using computers to simulate or work with random processes. 
+That is computers are completely deterministic, not random.
+Setting aside some rare exceptions, computers are deterministic by their very design. So if you give a computer a certain input, it will precisely follow instructions to produce an output.
+If the input is the same, then the output will be the same. - THAT’S HOW COMPUTERS WORK.
+Therefor it’s very difficult to create truly “random” numbers on a computer. Computers get around this by using pseudo-random number generators
+Pseudo-random numbers are computer generated numbers that appear random, but are actually predetermined
+We use np.random.seed when we need to generate random numbers or mimic random processes in NumPy.
+In order to work properly, pseudo-random number generators require a starting input. We call this starting input a “seed.”.
+In my jupyter notebook I go through the following examples - TBC
+
+
+tO BE COMPLETED add items from testing in jupyter noteook
+
+
 
 ## Lessons learned and conclusions
 
