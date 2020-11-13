@@ -97,8 +97,24 @@ In my Jupyter notebook I go through each of the two examples to test how they wo
 
 ## Distribution Functions 
 
+What is Data Distribution?
 
-To be completed 
+Data Distribution is a list of all possible values, and how often each value occurs.
+
+Such lists are important when working with statistics and data science.
+
+The random module offer methods that returns randomly generated data distributions.
+
+#### The Normal Destribution 
+
+https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
+Wikipedia, “Normal distribution”, https://en.wikipedia.org/wiki/Normal_distribution
+
+numpy.random.normal(loc=0.0, scale=1.0, size=None)
+
+The Normal Distribution is one of the most important distributions. It is also called the Gaussian Distribution after the German mathematician Carl Friedrich Gauss. It fits the probability distribution of many events, eg. IQ Scores, Heartbeat etc. The curve of a Normal Distribution is also known as the Bell Curve because of the bell-shaped curve
+
+(insert image of bell shaped curve)
 
 
 ## Explaining the use of Seeds in generating Pseudorandm Numbers
