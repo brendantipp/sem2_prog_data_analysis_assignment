@@ -164,6 +164,18 @@ Withing the readme file give an overvie of seeds, why they are important, there 
 
 References used and research undertaken
 
+Numpy.Random
+
+https://numpy.org/devdocs/reference/random/generator.html#numpy.random.default_rng
+https://docs.scipy.org/doc/numpy-1.15.1/user/whatisnumpy.html
+https://numpy.org/doc/stable/reference/random/index.html?highlight=random%20sampling%20numpy%20random#module-numpy.random
+
+Normal Distribution 
+https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
+Wikipedia, “Normal distribution”, https://en.wikipedia.org/wiki/Normal_distribution
+
+
+
 
 Understanding Numpy
 https://stackoverflow.com/questions/7029993/differences-between-numpy-random-and-random-random-in-python
