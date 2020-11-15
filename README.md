@@ -6,7 +6,7 @@
 
 ### Details of Git Repository
 
-The repository for the assigment and all the files are located here https://github.com/brendantipp/sem2_prog_data_analysis_assignment
+The repository for the assignment and all the files are located here https://github.com/brendantipp/sem2_prog_data_analysis_assignment
 
 ### Assignment Details and the Tasks for this assignment 
 
@@ -15,49 +15,23 @@ The repository for the assigment and all the files are located here https://gith
 3. Explain the use and purpose of at least five "Distribution" fucntions
 4. Explain the use of seeds in generating pseudorandom numbers
 
-Please note: My initial project plan for this assigment along with references and research links used can be found at the end of this README
+Please note: My initial project plan for this assignment along with references and research links used can be found at the end of this README
+
+### Software used
+
+- Annacoda distribution package (Python, Git) - www.anaconda.com
+- Jupyter Notebook - www.jupyter.org
+- cmder - www.cmder.net
+- Github www.github.com
 
 
-### How to run the Jupyter Notebook
+### How to run or view the Jupyter Notebook
 
-To run the notebook dowload from the repository to your local hard drive and open with Jupyter Notebooks - www.jupyter.org
+- The Jupyter notebook can be viewed on my My repository is held on GitHub - ttps://github.com/brendantipp/sem2_prog_data_analysis_assignment
 
-
-## Purpose of the Numpy Library and why is it so widely used
-
-NumPy is a pyton library used for working with arrays, it was created in 2005 by Travis Oliphant. It is an open source project and you can use if freely, NumPy stands for Numerical Python.
-
-NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
-
-At the core of the NumPy package, is the ndarray object. This encapsulates n-dimensional arrays of homogeneous data types, with many operations being performed in compiled code for performance source - - source https://docs.scipy.org/doc/numpy-1.15.1/user/whatisnumpy.html
-
-#### Why we use Numpy "its quick and efficient"
-In python we have lists that server the purpose of arrays, however are slow to process - Numpy aims to provide an array object that is 50 times faster than traditional python lists and is more efficient !!! NumPy arrays are stored in one continous place in memory and Numpy lists are optimized to work with the latest CPU achitectures.
-
-W3schools.com gives an nice easy explanation https://www.w3schools.com/python/numpy_intro.asp
-
-    #we can import the numpy module as follows using np to give a shortened name to the package for ease of use
-    import numpy as np
+- You can also download and run the Jupyter notebook from the repository to your local hard drive and open with Jupyter Notebooks - www.jupyter.org
 
 
-
-### Purpose of the Numpy.random subpackage
-
-
-NumPy offers the random moudle to work with random numbers - random is a subpackage of Numpy and is available in the numpy library. The module contains the functions which are used for generarting random numbers. The module contains some simple random data generation methods, some premutation and distribution functions , and random generator functions.
-
-There is a random() function built into python and you might ask why use the numpy.random package - I found the following explanation wording at https://stackoverflow.com/questions/7029993/differences-between-numpy-random-and-random-random-in-python benefical to a novice like me!
-
-"The numpy.random library contains a few extra probability distributions commonly used in scientific research, as well as a couple of convenience functions for generating arrays of random data. The random.random library is a little more lightweight, and should be fine if you're not doing scientific research or other kinds of work in statistics" . So numpy.random wins our vote.
-
-Within the numpy.random subpackage there are a number of functions and these can be broken down into 
-
-- Simple Random Data functions
-- Permutation funcitons
-- Distribution functions
-- Seed functions
-
-More information on the above can be found in more detail at https://numpy.org/doc/stable/reference/random/
 
 ### Important changes made to the Numpy.random package and why these changes are important  to sofware developers
 
@@ -66,6 +40,38 @@ At the time of writing this assignment them most uptodate version of the Numpy m
 It is the job of a software developer to keep up to date with these changes and to maintain their code. In the case of the numpy.random library developers can find the most recent documentation available at https://numpy.org/doc/stable/
 
 
+
+## Jupyter Notebook Contents
+
+
+### About Numpy https://numpy.org/
+
+In this section of the Jupyter notebook the cover teh Numpy Library.
+
+NumPy is a pyton library used for working with arrays, it was created in 2005 by Travis Oliphant. It is an open source project and you can use if freely, NumPy stands for Numerical Python.
+
+NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
+
+
+The jupyter notebook outlines how to import numpy and give it a shortened name for ease of use
+
+    #we can import the numpy module as follows using np to give a shortened name to the package for ease of use
+    import numpy as np
+    print (np.version.version)
+  
+ 
+###  1. Overview of the numpy.random package
+
+NumPy offers the random module to work with random numbers - numpy.random is a subpackage of Numpy and is available in the numpy library. We use Numpy.random when we want to generate simulated random data, (pretend data) very useful to progammers when they want to generate some random numbers that follow a certain pattern and also to test their code.
+
+The Numpy.random module contains the functions which are used for generarting random numbers. The module contains some simple random data generation methods, some premutation and distribution functions , and random generator functions.
+
+- In this section of the Jupyter Notebook I give an overview of the numpy.random package and why it is so widely used.
+- I go into more detail on the numpy.random sub package
+- I explain how we load the numpy library into our code
+
+
+#### I explain the use of the Simple random data" and "Permutations" functions
 
 
 #### Simple random data functions
@@ -81,6 +87,14 @@ The following are the Simple random data fucntions
 
 In my Jupyter notebook I go through each of the above with example, for the choice funciton i give an exmaple of this fucntion can be used to generate six random numbers for a lottery.
 
+#####  Default generator 
+
+Best practice in Numpy version 1.19 and greate is to use Random Generator and the steps are outlined in the Jupyter Notebook.
+
+    # The function numpy.random.default_rng will instantiate a Generator with numpy’s default BitGenerator.
+    https://numpy.org/devdocs/reference/random/generator.html#numpy.random.default_rng
+    rng = np.random.default_rng()
+
 
 #### Permutations 
 
@@ -95,105 +109,134 @@ permutation function - always returns a shuffed version of the original sequence
 In my Jupyter notebook I go through each of the two examples to test how they work in more detail. 
 
 
-## Distribution Functions 
+### Distribution Functions 
+
+In this section of the Jupyter notebook i will explain  Data Distribution and Data Distribution functions
 
 What is Data Distribution?
 
-Data Distribution is a list of all possible values, and how often each value occurs.
+Data Distribution is a list of all possible values, and how often each value occurs. Such lists are important when working with statistics and data science. The random module offer methods that returns randomly generated data distributions.
 
-Such lists are important when working with statistics and data science.
-
-The random module offer methods that returns randomly generated data distributions.
-
-#### The Normal Destribution 
-
-https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
-Wikipedia, “Normal distribution”, https://en.wikipedia.org/wiki/Normal_distribution
-
-numpy.random.normal(loc=0.0, scale=1.0, size=None)
-
-The Normal Distribution is one of the most important distributions. It is also called the Gaussian Distribution after the German mathematician Carl Friedrich Gauss. It fits the probability distribution of many events, eg. IQ Scores, Heartbeat etc. The curve of a Normal Distribution is also known as the Bell Curve because of the bell-shaped curve
-
-(insert image of bell shaped curve)
+I explain the purpose and use of the following 5 Distribtion functions available in numpy.random
 
 
-## Explaining the use of Seeds in generating Pseudorandm Numbers
+#### 1. Normal Distribution 
 
-There’s a fundamental problem when using computers to simulate or work with random processes. 
-That is computers are completely deterministic, not random.
-Setting aside some rare exceptions, computers are deterministic by their very design. So if you give a computer a certain input, it will precisely follow instructions to produce an output.
-If the input is the same, then the output will be the same. - THAT’S HOW COMPUTERS WORK.
-Therefor it’s very difficult to create truly “random” numbers on a computer. Computers get around this by using pseudo-random number generators
-Pseudo-random numbers are computer generated numbers that appear random, but are actually predetermined
-We use np.random.seed when we need to generate random numbers or mimic random processes in NumPy.
+The Normal Distribution is one of the most important distributions. It is also called the Gaussian Distribution after the German mathematician Carl Friedrich Gauss. It fits the probability distribution of many events, eg. IQ Scores, Heartbeat etc. The curve of a Normal Distribution is also known as the Bell Curve because of the bell-shaped curve. In the Jupyter notebook I give examples of how this distribution works and where it can be used.
+
+
+*** possible image?
+
+#### 2. Uniform Distribution
+
+The uniform distribution defines equal probability over a given range for a continuous distribution. For this reason, it is important as a reference distribution. One of the most important applications of the uniform distribution is in the generation of random numbers. It is used to describe probability where every event has an equal change of occuring for example as in the generation of random numbers. In the Jupyter notebook I give examples of how this distribution works and where it can be used 
+
+
+#### 3 Logistic Distribution
+
+Logistic Distributions help us in describing the statistical growth of the data. It is known for predicting how the growth will happen by taking in certain data. In the Jupyter notebook I give examples of how this distribution works and where it can be used. I also go through the differnce between a Logistic and Normal Distribution with graphed examples.
+
+
+#### 4 Binomial Distribution
+
+A binomial distribution can be thought of as simply the probability of a SUCCESS or FAILURE outcome in an experiment or survey that is repeated multiple times. The binomial is a type of distribution that has two possible outcomes (the prefix “bi” means two, or twice). In the Jupyter notebook I give examples of how this distribution works and where it can be used. I go through the differnces between a Normal and Binomial Distribution with graphed examples.
+
+
+### Explaining the use of Seeds in generating Pseudorandm Numbers
+
+In this section of my Jupyter notebook I attempt to explain the fundemental problem when using computers to simulate or work with random proecsses. I explain how Computers need some sort of mechanism to generate random number. 
+Computers get around this by using pseudo-random number generators.
+
 In order to work properly, pseudo-random number generators require a starting input. We call this starting input a “seed.”.
-In my jupyter notebook I go through the following examples - TBC
+
+Why use seeds? - Progammmers would often want to set a seed so that the same range of values etc are returned for testing their conde for consistency 
+
+In this section I outline changes in the new version of the Numpy package version 1.19 amd greater. I outline the way of generating seeds has changed from the Merseene Twister method to a new algorithm called PCG64. This new algoritm is called a Permuted Congruential Generator (64 Bit PCG 64)
+
+I researched and outline the reasons why the PCG64 algorithm is better than the previously used Merseene Twister method.
+
+Examples of setting seed using the older and newer methods is included in the notebook. In the example we test setting a seed and not and the output the differences.
+
+### References used and research undertaken as part of my assignment. 
+
+##### Numpy.Random
+
+- https://www.numpy.org
+- https://numpy.org/doc/stable/reference/random/index.htm
+- https://numpy.org/devdocs/reference/random/generator.html#numpy.random.default_rng
+- https://docs.scipy.org/doc/numpy-1.15.1/user/whatisnumpy.html
+- https://www.w3schools.com/python/numpy_intro.asp
+- https://stackoverflow.com/questions/7029993/differences-between-numpy-random-and-random-random-in-python
+- https://numpy.org/devdocs/reference/random/generator.html#numpy.random.default_rng
+- https://numpy.org/doc/stable/reference/random/index.html?highlight=random%20sampling%20numpy%20random#module-numpy.random
+- https://docs.scipy.org/doc/numpy-1.15.1/user/whatisnumpy.html 
+- https://www.javatpoint.com/numpy-random https://realpython.com/python-random
+
+##### Simple random data functions
+
+- https://numpy.org/doc/stable/reference/random/generator.html#numpy.random.Generator
+- https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.integers.html#numpy.random.Generator.integers
+- https://matplotlib.org/
+- https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.random.html#numpy.random.Generator.random
+- https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.choice.html#numpy.random.Generator.choice
+- https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.bytes.html#numpy.random.Generator.bytes
 
 
-tO BE COMPLETED add items from testing in jupyter noteook
+##### Permutations Functions
+
+- The shuffle function (https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.shuffle.html#numpy.random.Generator.shuffle)
+- The permutaion function. (https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.permutation.html#numpy.random.Generator.permutation)
+- https://www.w3schools.com/python/numpy_random_permutation.asp
 
 
+##### Distributions
 
-## Lessons learned and conclusions
+- https://www.datacamp.com/community/tutorials/probability-distributions-python
+- https://www.w3schools.com/python/python_ml_data_distribution.asp
+- https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
+- Wikipedia, “Normal distribution”, https://en.wikipedia.org/wiki/Normal_distribution
+- https://www.w3schools.com/python/numpy_random_distribution.asp
+- https://wtmatter.com/numpy-normal-distribution/
+- https://www.w3schools.com/python/numpy_random_uniform.asp
+- https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.uniform.html#numpy.random.Generator.uniform
+- https://mathworld.wolfram.com/UniformDistribution.html
+- https://www.w3schools.com/python/numpy_random_logistic.asp Weisstein, Eric W. “Logistic Distribution.” From MathWorld–A Wolfram Web Resource. 
+- http://mathworld.wolfram.com/LogisticDistribution.html
+- Wikipedia, “Logistic-distribution”, http://en.wikipedia.org/wiki/Logistic-distribution
+- https://wtmatter.com/numpy-logistic-distribution/
+- https://www.w3schools.com/python/numpy_random_binomial.asp
+- https://www.statisticshowto.com/probability-and-statistics/binomial-theorem/binomial-distribution-formula/
+- https://brilliant.org/wiki/poisson-distribution/
+- https://towardsdatascience.com/poisson-distribution-intuition-and-derivation-1059aeab90d
+- https://www.statisticshowto.com/poisson-distribution/
+- https://brilliant.org/wiki/poisson-distribution/
 
 
-#### Project Plan
+###### Use of seeds in generating pseudorandom numbers
+
+
+- https://www.pcg-random.org/
+- https://www.cs.hmc.edu/tr/hmc-cs-2014-0905.pdf
+- https://www.pcg-random.org/
+- https://stackoverflow.com/questions/63081108/how-can-i-store-and-restore-random-state-in-numpy-random-generator-instances
+- https://numpy.org/doc/stable/reference/random/bit_generators/pcg64.htm
+- https://www.sharpsightlabs.com/blog/numpy-random-seed/
+- https://en.wikipedia.org/wiki/Random_seed
+- https://www.researchgate.net/post/Can_someone_explain_what_is_seed_in_generating_a_random_number
+
+
+#### Inital Project Plan
 
 Jupyter Notebook created named - explaining.numpy.random
 
-My Assignment Plan 
+##### My Assignment Plan 
 
-Explain purpose package 
-
-Use the reamde file to give an overview of the package and withing Jupyter i will dig deeper into how to load numpy and some examples of using the subpackage.
-
-I intend to use this section to expalin more about the newest version of of numpy and the main changes. I will give an overview of the main chalenges software developers face when packages and APIs are upadted with examples 
-
-Explain the use of the "simple random data" and "Permutations" functions
-
-Within the readme i will exmplain the uses and withing the jupyter file will dig deeper with examples and sample code 
-
-Explain the use and purpose of at least five "Distribution" fucntions
-
-Use the reamde to give a brief desciption of each of the selected distibutions, i will use jupyter to code exmaples of how each can be used. I will genrate random data using numpy and i will graph my restults for visual representation.
-
-Explain the use of seeds in generating pseudorandom numbers
- 
-Withing the readme file give an overvie of seeds, why they are important, there usess and withing the Jupyter notebook give examples of how they are used, im going to review and reshearch how the PCG64 method outperforms the mersenne twister pseudo random number monthod from the previous version of Numpy
-
-
-References used and research undertaken
-
-Numpy.Random
-
-https://numpy.org/devdocs/reference/random/generator.html#numpy.random.default_rng
-https://docs.scipy.org/doc/numpy-1.15.1/user/whatisnumpy.html
-https://numpy.org/doc/stable/reference/random/index.html?highlight=random%20sampling%20numpy%20random#module-numpy.random
-
-Normal Distribution 
-https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
-Wikipedia, “Normal distribution”, https://en.wikipedia.org/wiki/Normal_distribution
-
-
-
-
-Understanding Numpy
-https://stackoverflow.com/questions/7029993/differences-between-numpy-random-and-random-random-in-python
-
-
-https://numpy.org/doc/stable/reference/random/generator.html#numpy.random.Generator
-https://numpy.org/doc/stable/reference/random/index.html
-https://docs.scipy.org/doc/numpy-1.15.1/reference/routines.random.html
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Explain purpose package 
+- Use the reamde file to give an overview of the package and withing Jupyter i will dig deeper into how to load numpy and some examples of using the subpackage.
+- I intend to use this section to expalin more about the newest version of of numpy and the main changes. I will give an overview of the main chalenges software developers face when packages and APIs are upadted with examples
+- Explain the use of the "simple random data" and "Permutations" functions.
+- Within the readme i will exmplain the uses and withing the jupyter file will dig deeper with examples and sample code.
+- Explain the use and purpose of at least five "Distribution" fucntions
+- Use the reamde to give a brief desciption of each of the selected distibutions, i will use jupyter to code exmaples of how each can be used. I will genrate random data using numpy and i will graph my restults for visual representation.
+- Explain the use of seeds in generating pseudorandom numbers 
+- Withing the readme file give an overvie of seeds, why they are important, there usess and withing the Jupyter notebook give examples of how they are used, im going to review and reshearch how the PCG64 method outperforms the mersenne twister pseudo random number monthod from the previous version of Numpy
