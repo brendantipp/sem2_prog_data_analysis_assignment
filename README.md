@@ -45,17 +45,17 @@ It is the job of a software developer to keep up to date with these changes and 
 
 In the Jupyter Notebook with file name explaining.numpy.random.ipynb I give an overview of the following:
 
-1 An overview of Numpy and the Numpy.random package in Python and their purpose
-2 I will explain the use of the "Simple random data" and "permutations" functions
-3 I will explain the use and purpose of at least five "Distributions" functions
-4 I will explain the user of Seeds in generating pseudorandom numbers.
+1. An overview of Numpy and the Numpy.random package in Python and their purpose
+2. I will explain the use of the "Simple random data" and "permutations" functions
+3. I will explain the use and purpose of at least five "Distributions" functions
+4. I will explain the user of Seeds in generating pseudorandom numbers.
 
 
 #### Libraires/Packages used
 I will be using the numpy.random package from python and I will also be utilising the Matplotib and Seaborn packages for better visualisation using graphs. 
 
 
-## Below is a walktrough of what is contained in the Jupyter Notebook.
+## Below is a walkthrough of what is contained in the Jupyter Notebook.
 
 ### Explain the use and purpose of the numpy.random package https://numpy.org/
 
@@ -93,10 +93,10 @@ These functions allow us to define sequences and arryas of integers  random real
 
 The following are the Simple random data functions
 
-1 integers - allows us to define a sequences and arrays of integers
-2  random - return random floats between 0.0 and 1.0
-3 choice - to generate a random sample from a given 1 dimensional array
-4 bytes - to return random byte
+1.  integers - allows us to define a sequences and arrays of integers
+2.   random - return random floats between 0.0 and 1.0
+3.  choice - to generate a random sample from a given 1 dimensional array
+4.  bytes - to return random byte
 
 In my Jupyter notebook I go through each of the above with example(s), for the choice function I give an exmaple of this function can be used to generate six random numbers for a lottery.
 
@@ -168,7 +168,7 @@ In this section I outline changes in the new version of the Numpy package versio
 
 I researched and outline the reasons why the PCG64 algorithm is better than the previously used Merseene Twister method.
 
-Examples of setting seed using the older and newer methods is included in the notebook. In the example we test setting a seed and not seed , I explain the output of both examples and the difference setting a seed makes.
+Examples of setting seed using the older and newer methods is included in the notebook. In the exsample coded dont set a seed and then we do , I explain the output of both code examples and the difference setting a seed makes.
 
 ### References used and research undertaken as part of my assignment. 
 
