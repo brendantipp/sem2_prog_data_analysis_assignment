@@ -255,6 +255,10 @@ https://www.statisticshowto.com/probability-and-statistics/binomial-theorem/bino
 - https://en.wikipedia.org/wiki/Random_seed
 - https://www.researchgate.net/post/Can_someone_explain_what_is_seed_in_generating_a_random_number
 
+###### Other - Markup etc
+
+https://sebastianraschka.com/Articles/2014_ipython_internal_links.html
+
 
 ####  My Inital Project and Assignment Plan
 
@@ -265,9 +269,10 @@ https://www.statisticshowto.com/probability-and-statistics/binomial-theorem/bino
 - Explain the use of the "simple random data" and "Permutations" functions.
 - Within the readme i will exmplain the uses and withing the jupyter file will dig deeper with examples and sample code.
 - Explain the use and purpose of at least five "Distribution" fucntions
-- Use the reamde to give a brief desciption of each of the selected distibutions, i will use jupyter to code exmaples of how each can be used. I will genrate random data using numpy and i will graph my restults for visual representation.
+- Use the README to give a brief desciption of each of the selected distibutions, i will use jupyter to code exmaples of how each can be used. I will generate random data using numpy and i will graph my results for visual representation.
 - Explain the use of seeds in generating pseudorandom numbers 
 - Withing the readme file give an overvie of seeds, why they are important, there usess and withing the Jupyter notebook give examples of how they are used, im going to review and reshearch how the PCG64 method outperforms the mersenne twister pseudo random number monthod from the previous version of Numpy
+- Use markdown to add images and links within the jupyter notebook as referenced in assignment plan
 
 
 ## THE END
